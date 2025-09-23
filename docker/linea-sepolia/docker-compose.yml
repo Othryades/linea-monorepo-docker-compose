@@ -114,7 +114,7 @@ services:
       - ./maru/config/maru-config.toml:/opt/consensys/maru/configs/maru-config.toml:ro
       - ./maru/config/maru-genesis.json:/opt/consensys/maru/configs/maru-genesis.json:ro
       - ./maru/config/log4j.xml:/opt/consensys/maru/configs/log4j.xml:ro
-      - linea-sepolia-maru:/data
+      - linea-sepolia-maru:/opt/maru
     command:
       - "java"
       - "-Dlog4j2.configurationFile=/opt/consensys/maru/configs/log4j.xml"
